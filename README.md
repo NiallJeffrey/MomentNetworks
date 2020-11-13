@@ -3,9 +3,6 @@ Solving high-dimensional parameter inference: marginal posterior densities & Mom
 
 [ArXiv paper (Accepted in the Third Workshop on Machine Learning and the Physical Sciences, NeurIPS 2020)](https://arxiv.org/abs/2011.05991)
 
-# Moment network demos
-(gravitational wave demo coming soon as Google Colab notebook)
-
 ## 100 dimensional model
 ###  (`Google Colab` demo)
 
@@ -16,6 +13,12 @@ From a 100-dimensional parameter space, directly estimate the mean and covarianc
 Google Colab notebook can be run in browser with GPU acceleration
 
 (modules loaded with `!pip install 'git+https://github.com/NiallJeffrey/MomentNetworks.git'`)
+
+## Gravitational wave data example
+###  (`Google Colab` demo)
+
+[MomentNetwork_demo/MomentNetwork_grav_wave_demo.ipynb](https://github.com/NiallJeffrey/MomentNetworks/blob/master/MomentNetwork_demo/MomentNetwork_grav_wave_demo.ipynb)
+
 
 ## 
 ### Dimensional challenges demos
