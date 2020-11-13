@@ -11,6 +11,10 @@ From a 100-dimensional parameter space, directly estimate the mean and covarianc
 
 [MomentNetwork_demo/moment_network_100D.ipynb](https://github.com/NiallJeffrey/MomentNetworks/blob/master/MomentNetwork_demo/moment_network_100D.ipynb)
 
+Google Colab notebook can be run in browser with GPU acceleration
+
+(modules loaded with `!pip install 'git+https://github.com/NiallJeffrey/MomentNetworks.git'`)
+
 ## Dimensional challenges demos
 #### 20 parameters, 20 data elements, and 1000000 training data realisations
 
