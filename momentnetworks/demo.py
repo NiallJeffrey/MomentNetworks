@@ -40,3 +40,26 @@ def generate__signal(size, n_training):
   cov_signal_inv = np.linalg.pinv(cov_signal)
 
   return training_z, cov_signal, cov_signal_inv
+
+def log_prior(theta, data,cov_signal_inv):
+    return -0.5*np.inner(theta,np.inner(cov_signal_inv,theta))
+
+def log_likelihood(theta, data,cov_noise_inv):
+    return -0.5*np.inner(theta-data,np.inner(cov_noise_inv,theta-data))
+
+def log_posterior_delfi(theta, data,cov_signal_inv):
+    return log_prior(theta, data,cov_signal_inv) + DelfiEnsemble.log_likelihood_stacked(theta,data=data) 
+
+def log_posterior_likelihood(theta, data,cov_signal_inv,cov_noise_inv):
+    return log_prior(theta, data,cov_signal_inv)  + log_likelihood(theta, data,cov_noise_inv)
+
+
+def initial_parameters(theta, relative_sigma):
+    """
+    This is not randomise the initial position of the
+    :param theta: list/array of parameter values
+    :param relative_sigma: controls variance of random draws
+    :return: the theta array but with random shifts
+    """
+    theta = np.array(theta)
+    return np.random.normal(theta, np.abs(theta * relative_sigma))

@@ -3,6 +3,7 @@
 from setuptools import setup, find_packages
 import sys
 
+# tensorflow also required, but can break setup if requires
 setup(name='momentnetworks',
       version='0.1',
       description='Estimation_posterior_moments',
@@ -11,10 +12,8 @@ setup(name='momentnetworks',
       packages=find_packages(),
       install_requires=[
           "emcee",
-          "numpy",
           "getdist",
-	  "chainconsumer"
+	  "chainconsumer",
           "scipy",
 	  "matplotlib",
-          "tensorflow"
       ])
