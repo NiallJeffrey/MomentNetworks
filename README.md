@@ -8,7 +8,7 @@ NOTE - this code is under rearrangement
 
 From a 100-dimensional parameter space, directly estimate the mean and covariance for pairs of parameters with Moment Networks:
 
-[high_dim_failure_demo/delfi_failure_example.ipynb](https://github.com/NiallJeffrey/MomentNetworks/blob/master/MomentNetwork_100dim/moment_network_100D.ipynb)
+[MomentNetwork_100dim/moment_network_100D.ipynb](https://github.com/NiallJeffrey/MomentNetworks/blob/master/MomentNetwork_100dim/moment_network_100D.ipynb)
 
 ## Failure demos
 ### 20 parameters, 20 data elements, and 1000000 training data realisations
