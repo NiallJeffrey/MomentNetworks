@@ -15,7 +15,7 @@ import os, sys
 import random
 import emcee as mc
 import getdist
-
+import time
 
 
 class simple_leaky():
