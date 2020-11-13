@@ -4,6 +4,7 @@ Solving high-dimensional parameter inference: marginal posterior densities & Mom
 [ArXiv paper (Accepted in the Third Workshop on Machine Learning and the Physical Sciences, NeurIPS 2020)](https://arxiv.org/abs/2011.05991)
 
 # Moment network demos
+(gravitational wave demo coming soon as Google Colab notebook)
 
 ## 100 dimensional model
 
