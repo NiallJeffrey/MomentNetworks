@@ -1,5 +1,6 @@
 # MomentNetworks
-Solving high-dimensional parameter inference: marginal posterior densities & Moment Networks
+Solving high-dimensional parameter inference: marginal posterior densities & Moment Networks 
+
 [ArXiv paper (Accepted in the Third Workshop on Machine Learning and the Physical Sciences, NeurIPS 2020)](https://arxiv.org/abs/2011.05991)
 
 # Moment network demos
