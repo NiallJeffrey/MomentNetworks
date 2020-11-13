@@ -108,7 +108,7 @@ def initial_parameters(theta, relative_sigma):
     return np.random.normal(theta, np.abs(theta * relative_sigma))
 
 
-def grav_wave_series(n_training, data_length=256, t_samples = 2048):
+def grav_wave_series(n_training, mass_1_samples, mass_2_samples, distance_samples,data_length=256, t_samples = 2048):
   
   from pycbc.waveform import get_td_waveform
   import pycbc.noise
