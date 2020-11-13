@@ -1,6 +1,8 @@
 # MomentNetworks
 Demonstration of MomentNetworks for high-dimensional probability density estimation (LFI)
 
+NOTE - this code is under rearrangement
+
 ## Test A
 ### 20 parameters, 20 data elements, and 1000000 training data realisations
 
