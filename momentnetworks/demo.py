@@ -109,7 +109,10 @@ def initial_parameters(theta, relative_sigma):
 
 
 def grav_wave_series(n_training, data_length=256, t_samples = 2048):
-
+  
+  from pycbc.waveform import get_td_waveform
+  import pycbc.noise
+  import pycbc.psd
   flow = 30.0
   delta_f = 1.0 / 16
   flen = int(t_samples / delta_f) + 1
