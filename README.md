@@ -1,4 +1,4 @@
-# MomentNetworks [![arXiv](https://img.shields.io/badge/arXiv-2011.05991-b31b1b.svg)](https://arxiv.org/abs/2011.05991)
+# MomentNetworks [![arXiv](https://img.shields.io/badge/arXiv-2011.05991-b31b1b.svg)](https://arxiv.org/abs/2011.05991) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 Solving high-dimensional parameter inference: marginal posterior densities & Moment Networks 
 
 [ArXiv paper (Accepted in the Third Workshop on Machine Learning and the Physical Sciences, NeurIPS 2020)](https://arxiv.org/abs/2011.05991)
