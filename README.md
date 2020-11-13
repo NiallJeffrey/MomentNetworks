@@ -1,13 +1,12 @@
 # MomentNetworks
-Demonstration of MomentNetworks for high-dimensional probability density estimation (LFI)
-
-NOTE - this code is under rearrangement
-
+Solving high-dimensional parameter inference: marginal posterior densities & Moment Networks
+[ArXiv paper (Accepted in the Third Workshop on Machine Learning and the Physical Sciences, NeurIPS 2020)](https://arxiv.org/abs/2011.05991)
 
 # Moment network demos
 
 ## 100 dimensional model
 [MomentNetwork_demo/moment_network_100D.ipynb](https://github.com/NiallJeffrey/MomentNetworks/blob/master/MomentNetwork_demo/moment_network_100D.ipynb)
+
 From a 100-dimensional parameter space, directly estimate the mean and covariance for pairs of parameters with Moment Networks:
 
 
