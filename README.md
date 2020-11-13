@@ -11,7 +11,7 @@ NOTE - this code is under rearrangement
 From a 100-dimensional parameter space, directly estimate the mean and covariance for pairs of parameters with Moment Networks:
 
 
-### Dimensional challenged demos
+## Dimensional challenges demos
 #### 20 parameters, 20 data elements, and 1000000 training data realisations
 
 #### (I)
