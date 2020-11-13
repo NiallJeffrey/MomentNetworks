@@ -57,6 +57,45 @@ class simple_leaky():
 
         return dense_model
 
+
+class simpler_leaky():
+    """
+    A simpler MLP with LeakyReLU activation
+    """
+
+    def __init__(self, input_size, output_size, learning_rate=None):
+        """
+        Initialisation
+        :param map_size: size of square image (there are map_size**2 pixels)
+        :param learning_rate: learning rate for the optimizer
+        """
+        self.input_size = input_size
+        self.learning_rate = learning_rate
+        self.output_size = output_size
+
+    def model(self):
+        print(self.input_size)
+
+        input_data = (Input(shape=(self.input_size,)))
+
+        x1 = Dense(self.input_size, input_dim=self.input_size, kernel_initializer='normal')(input_data)
+        x1 = LeakyReLU(alpha=0.1)(x1)
+        x2 = Dense(self.input_size*2, kernel_initializer='normal')(x1)
+        x2 = LeakyReLU(alpha=0.1)(x2)
+        x3 = Dense(self.input_size, kernel_initializer='normal')(x2)
+
+
+        dense_model = Model(input_data, x3)
+        dense_model.summary()
+
+        if self.learning_rate is None:
+            dense_model.compile(optimizer='adam', loss='mse')
+        else:
+            dense_model.compile(optimizer=optimizers.Adam(lr=self.learning_rate), loss='mse')
+
+        return dense_model
+
+
 def generate__signal(size, n_training):
     """
     Generate high-dimensional signal with covariance
