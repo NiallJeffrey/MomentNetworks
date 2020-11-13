@@ -3,6 +3,13 @@ Demonstration of MomentNetworks for high-dimensional probability density estimat
 
 NOTE - this code is under rearrangement
 
+
+## 100-dimensional marginal posterior moment estimation
+
+From a 100-dimensional parameter space, directly estimate the mean and covariance for pairs of parameters with Moment Networks:
+
+[high_dim_failure_demo/delfi_failure_example.ipynb](https://github.com/NiallJeffrey/MomentNetworks/blob/master/MomentNetwork_100dim/moment_network_100D.ipynb)
+
 ## Failure demos
 ### 20 parameters, 20 data elements, and 1000000 training data realisations
 
