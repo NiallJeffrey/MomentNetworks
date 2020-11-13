@@ -14,7 +14,7 @@ From a 100-dimensional parameter space, directly estimate the mean and covarianc
 ### 20 parameters, 20 data elements, and 1000000 training data realisations
 
 #### (I)
-Estimate the full (20,20) dimensional distribution P(d | \theta )) with MAF and compare with MCMC from the known likelihood. MAF fails completely in this set-up. If the number parameters is reduced to 12, DELFI does not fail:
+Estimate the full (20,20) dimensional distribution P(d | \theta )) with MAF and compare with MCMC from the known likelihood. MAF fails completely in this set-up. If the number parameters is reduced to 12, MAF does not fail:
 
 [high_dim_failure_demo/delfi_failure_example.ipynb](https://github.com/NiallJeffrey/MomentNetworks/blob/master/high_dim_failure_demo/delfi_failure_example.ipynb)
 
