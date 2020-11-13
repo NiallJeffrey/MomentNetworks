@@ -7,6 +7,7 @@ Solving high-dimensional parameter inference: marginal posterior densities & Mom
 (gravitational wave demo coming soon as Google Colab notebook)
 
 ## 100 dimensional model
+###  (`Google Colab` demo)
 
 From a 100-dimensional parameter space, directly estimate the mean and covariance for pairs of parameters with Moment Networks:
 
