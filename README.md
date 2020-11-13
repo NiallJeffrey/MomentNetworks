@@ -6,10 +6,10 @@ Solving high-dimensional parameter inference: marginal posterior densities & Mom
 # Moment network demos
 
 ## 100 dimensional model
-[MomentNetwork_demo/moment_network_100D.ipynb](https://github.com/NiallJeffrey/MomentNetworks/blob/master/MomentNetwork_demo/moment_network_100D.ipynb)
 
 From a 100-dimensional parameter space, directly estimate the mean and covariance for pairs of parameters with Moment Networks:
 
+[MomentNetwork_demo/moment_network_100D.ipynb](https://github.com/NiallJeffrey/MomentNetworks/blob/master/MomentNetwork_demo/moment_network_100D.ipynb)
 
 ## Dimensional challenges demos
 #### 20 parameters, 20 data elements, and 1000000 training data realisations
