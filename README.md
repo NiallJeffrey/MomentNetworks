@@ -16,6 +16,7 @@ Google Colab notebook can be run in browser with GPU acceleration
 
 ## Gravitational wave data example
 ###  (`Google Colab` demo)
+Demonstrate marginal posterior moment estimation using high-dimensional LIGO-like gravitational wave time series
 
 [MomentNetwork_demo/MomentNetwork_grav_wave_demo.ipynb](https://github.com/NiallJeffrey/MomentNetworks/blob/master/MomentNetwork_demo/MomentNetwork_grav_wave_demo.ipynb)
 
