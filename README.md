@@ -16,7 +16,8 @@ Google Colab notebook can be run in browser with GPU acceleration
 
 (modules loaded with `!pip install 'git+https://github.com/NiallJeffrey/MomentNetworks.git'`)
 
-## Dimensional challenges demos
+## 
+### Dimensional challenges demos
 #### 20 parameters, 20 data elements, and 1000000 training data realisations
 
 #### (I)
