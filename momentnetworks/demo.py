@@ -107,3 +107,55 @@ def initial_parameters(theta, relative_sigma):
     theta = np.array(theta)
     return np.random.normal(theta, np.abs(theta * relative_sigma))
 
+
+def grav_wave_series(n_training, data_length=256, t_samples = 2048):
+
+  flow = 30.0
+  delta_f = 1.0 / 16
+  flen = int(t_samples / delta_f) + 1
+  psd = pycbc.psd.aLIGOZeroDetHighPower(flen, delta_f, flow)
+  delta_t = 1.0 / t_samples
+  tsamples = int(1 / delta_t)
+
+  
+  sim_data = np.empty((n_training*8, data_length))
+  sim_data_noisy = np.empty((n_training*8, data_length))
+
+  params_rescaled = np.empty((n_training*2,2))
+
+  for i in range(n_training):
+    if (i%200)==0: print(str(i) + '/' + str(n_training))
+
+    hp, hc = get_td_waveform(approximant="SEOBNRv4_opt",
+                          mass1=mass_1_samples[i],
+                          mass2=mass_2_samples[i],
+                          delta_t=1.0/t_samples,
+                          tsamples=t_samples,
+                          f_lower=10,
+                          distance=distance_samples[i])
+    
+    signal_temp = np.array(hp)[np.where((np.array(hp.sample_times)>-1)&(np.array(hp.sample_times)<0))]*1e21
+    noisy_signal = signal_temp +   pycbc.noise.noise_from_psd(tsamples, delta_t, psd, seed = int(time.time()))*1e21
+    
+    sim_data[i*8] = signal_temp[:256]
+    sim_data[i*8+1] = signal_temp[256:512]
+    sim_data[i*8+2] = signal_temp[512:768]
+    sim_data[i*8+3] = signal_temp[768:1024]
+    sim_data[i*8+4] = signal_temp[1024:1280]
+    sim_data[i*8+5] = signal_temp[1280:1536]
+    sim_data[i*8+6] = signal_temp[1536:1792]
+    sim_data[i*8+7] = signal_temp[1792:]
+
+    sim_data_noisy[i*8] = noisy_signal[:256] 
+    sim_data_noisy[i*8+1] = noisy_signal[256:512] 
+    sim_data_noisy[i*8+2] = noisy_signal[512:768] 
+    sim_data_noisy[i*8+3] = noisy_signal[768:1024]
+    sim_data_noisy[i*8+4] = noisy_signal[1024:1280] 
+    sim_data_noisy[i*8+5] = noisy_signal[1280:1536] 
+    sim_data_noisy[i*8+6] = noisy_signal[1536:1792] 
+    sim_data_noisy[i*8+7] = noisy_signal[1792:]
+
+  sim_data= np.vstack([sim_data[:,:128],sim_data[:,-128:]])
+  sim_data_noisy= np.vstack([sim_data_noisy[:,:128],sim_data_noisy[:,-128:]])
+
+  return sim_data, sim_data_noisy
