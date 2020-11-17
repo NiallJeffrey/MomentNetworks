@@ -5,12 +5,7 @@ Solving high-dimensional parameter inference: marginal posterior densities & Mom
 
 [ArXiv paper (Accepted in the Third Workshop on Machine Learning and the Physical Sciences, NeurIPS 2020)](https://arxiv.org/abs/2011.05991)
 
-
-<object data="https://github.com/NiallJeffrey/MomentNetworks/blob/master/joint_marginal_tight.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="http://yoursite.com/the.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/NiallJeffrey/MomentNetworks/blob/master/joint_marginal_tight.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+![readme_image](https://github.com/NiallJeffrey/MomentNetworks/blob/master/readme_plot.jpg)
 
 ## 100-dimensional model
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NiallJeffrey/MomentNetworks/blob/master/MomentNetwork_demo/moment_network_100D.ipynb)
